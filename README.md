@@ -17,11 +17,13 @@ More detail: https://nycu-clab.github.io
 2. Install modules from requirements.txt
 3. Run `python evaluate.py dataset_dir model_name checkpoint_name --group_gop n --gop m`
 
+4. In case `torch_compression` module is unavailable after install the torchac, drop the [files here](https://drive.google.com/file/d/15pWXFMAF_IcK5UVXVHPrhxn7xD9iyGI6/view?usp=share_link) inside the evaluation folder.
+
 Example: 
 
 - HEVC-B: `python evaluate.py ./dataset/class_b tlzmc-plus ./tlzmc-plus-mse-2048.ckpt --group_gop 3 --gop 32`
 
-- UVG: `python evaluate.py ./dataset/class_b tlzmc-plus ./tlzmc-plus-mse-2048.ckpt --group_gop 18 --gop 32`
+- UVG: `python evaluate.py ./dataset/uvg tlzmc-plus ./tlzmc-plus-mse-2048.ckpt --group_gop 18 --gop 32`
 
 - Evaluation results are stored in folder `./evaluation`
 
